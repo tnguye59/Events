@@ -1,0 +1,29 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+	#login
+	{
+		border: 1px solid black;
+		width: 500px;
+		height: 150px;
+		padding-left: 30px;
+    	padding-top: 20px;
+    	box-shadow: 10px 10px 5px #888888;
+    	margin-bottom: 50px;
+	}
+	#register
+	{
+		border: 1px solid black;
+		width: 500px;
+		height: 300px;
+		padding-left: 30px;
+    	padding-top: 20px;
+    	box-shadow: 10px 10px 5px #888888;
+    	margin-right: 30px;
+	}
+	#register, #login
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
