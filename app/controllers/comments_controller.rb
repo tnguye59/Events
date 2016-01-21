@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
 	def index
 		@event = Event.find(params[:id])
 		@comments = Comment.all.where(event_id: params[:id])
+		@attends = @event.attends
 	end
 
 	def create

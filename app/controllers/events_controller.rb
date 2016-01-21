@@ -26,6 +26,16 @@ class EventsController < ApplicationController
 		end
 	end
 
+	def destroy
+		Event.find(params[:event_id]).destroy
+		redirect_to "/events/#{session[:user_id]}"
+	end
+
+	def not_attend
+		Attend.where(user_id: params[:user_id], event_id: params[:event_id]).destroy_all
+		redirect_to "/events/#{session[:user_id]}"
+	end
+
 	private
 		def event_params
 			params.require(:event).permit(:name, :date, :location, :state, :user_id)

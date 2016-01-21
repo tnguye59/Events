@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get "/events/:id" => "events#index"
   post "/events" => "events#create"
   post "events/attend" => "events#attend"
+  delete "events" => "events#destroy"
+  delete "events/not_attend" => "events#not_attend"
 
   #Sessions routes
   get "sessions/logout" => "sessions#destroy"

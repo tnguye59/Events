@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+@import "materialize/extras/nouislider";
+
+// $(document).ready(function() {
+//     $('select').material_select();
+// });
+
+ // $('.datepicker').pickadate({
+ //    selectMonths: true, 
+ //    selectYears: 15 
+ //  });
+

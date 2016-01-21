@@ -2,28 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-	#login
-	{
-		border: 1px solid black;
-		width: 500px;
-		height: 150px;
-		padding-left: 30px;
-    	padding-top: 20px;
-    	box-shadow: 10px 10px 5px #888888;
-    	margin-bottom: 50px;
-	}
-	#register
-	{
-		border: 1px solid black;
-		width: 500px;
-		height: 300px;
-		padding-left: 30px;
-    	padding-top: 20px;
-    	box-shadow: 10px 10px 5px #888888;
-    	margin-right: 30px;
-	}
-	#register, #login
-	{
-		display: inline-block;
-		vertical-align: top;
-	}
+
+  /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+        
+
+
