@@ -1,4 +1,12 @@
-<p><a href="/events/<%= @user.id %>">Event Dashboard</a> | <a href="/sessions/logout">Log out</a></p>
+<nav class="teal lighten-1">
+<div class="nav-wrapper">
+  <ul id="nav-mobile" class="left hide-on-med-and-down">
+    <li><a href="/events/<%= @user.id %>">Event Dashboard</a></li>
+    <li><a href="/sessions/logout">Log out</a></li>
+  </ul>
+</div>
+</nav>
+
 
 <h1>Edit Your Profile</h1>
 
@@ -69,6 +77,6 @@
 			<option value="WY">Wyoming</option>
 		</select>			
 		</p>
-		<input type="submit" value="Update Record">
+		<input type="submit" value="Update Record" class="btn">
 	</form>
 </fieldset>
